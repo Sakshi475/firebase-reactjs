@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f0f4f8, #e0e7ff);
+  color: #333;
+}
+
+/* Headings */
+h1, h2 {
+  color: #2c3e50;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* DASHBOARD LAYOUT */
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 250px;
+  background: linear-gradient(135deg, #1f2937, #374151);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.sidebar button {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  border: none;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar button:hover {
+  background: linear-gradient(135deg, #6366f1, #818cf8);
+  transform: scale(1.05);
+}
+
+/* CONTENT AREA */
+.content {
+  flex-grow: 1;
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.content:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* INPUTS & BUTTONS */
+input, button {
+  width: 90%;
+  max-width: 400px;
+  padding: 12px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  font-weight: bold;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #059669, #047857);
+  transform: scale(1.05);
+}
+
+/* FILE UPLOAD SECTION */
+.file-upload {
+  background: #eef2ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.file-upload input {
+  border: none;
+  background: white;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  .dashboard {
+      flex-direction: column;
+  }
+
+  .sidebar {
+      width: 100%;
+      text-align: center;
+      border-radius: 0;
+  }
+
+  .content {
+      margin: 10px;
+      padding: 20px;
+  }
+}
